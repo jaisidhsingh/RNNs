@@ -38,6 +38,11 @@ class RNN():
         return params
     
     def forward(self, x):
+        """
+        Keep in mind, input tensor x assumed to be of shape:
+        (number_of_time_steps, batch_size, vocabulary_size)
+        """
+        
         H = self.init_hidden_state()
         Wxh, Whh, bh, Whq, bq = self.init_params
         outputs = []
