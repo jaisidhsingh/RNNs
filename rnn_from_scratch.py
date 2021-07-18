@@ -28,6 +28,13 @@ class RNN():
         bq = np.zeros(output_size)
         
         params = [Wxh, Whh, bh, Whq, bq]
+        """
+        Gradient to be attanched to our parameters
+        
+        for param in params:
+            param.attach_grad() if using mxnet or initialize torch tensors with requires_grad=True if using Pytorch.
+        A simple forward exemplified.
+        """
         return params
     
     def forward(self, x):
