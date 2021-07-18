@@ -1,4 +1,10 @@
 # RNNs
 
-Implemention of simple RNN, LSTM, GRU in PyTorch on the MNIST dataset. 
-RNN Implementation from scratch coming.
+### Implemented a basic RNN from scratch
+
+### Pytorch Usage Examples:
+> RNN
+
+> LSTM
+
+> GRU
